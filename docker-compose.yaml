@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  backend:
+    build: .
+    # volumes to map the changes
+    volumes:
+      - .:/app
+    # first port belong tooo
+    ports:
+      - 8000:8000
